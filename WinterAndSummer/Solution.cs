@@ -10,7 +10,6 @@ namespace WinterAndSummer
     {
         public int WinterAndSummer(int[] T)
         {
-
             for (int i = 1; i < T.Length - 1; ++i)
             {
                 bool flag = true;
@@ -22,12 +21,9 @@ namespace WinterAndSummer
                 {
                     for (int k = 0; k < subArray2.Length; k++)
                     {
-
                         if (subArray1[j] > subArray2[k])
                             flag = false;
-
                     }
-
                 }
                 if (flag)
                     return i;
